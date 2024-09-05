@@ -8,7 +8,7 @@
 
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--cor-principal);
@@ -17,9 +17,8 @@ body {
 
 /* Header */
 header {
-  background-image: url(/Imagens/fundo.jpg);
-  background-color: var(--cor-secundaria-1);
   background-size: cover;
+  background: linear-gradient(to bottom right, #a2d2ff, #d2f3c2);
   border-bottom: 3px solid gray;
   color: var(--cor-principal);
   text-align: center;
@@ -28,7 +27,8 @@ header {
 
 h1 {
   font-size: 3rem; /* Ajuste o tamanho conforme necessário */
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   color: #336699; /* Um tom de azul mais escuro */
   border-bottom: 2px solid black;
 }
@@ -111,6 +111,12 @@ header p {
 
 /* Main */
 main {
+  background-color: rgba(
+    240,
+    240,
+    240,
+    0.9
+  ); /* Cor cinza claro com leve transparência */
   padding: 20px;
 }
 
@@ -127,32 +133,51 @@ section:first-child {
   flex-direction: column; /* Altera a direção para coluna */
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
+  background-color: #f0f0f0; /* Cor de fundo suave */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 input[type="date"],
 button {
-  padding: 10px 20px;
+  padding: 15px;
+  border: none;
   border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 2rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+  width: 250px; /* Ajuste o tamanho conforme necessário */
 }
 
 button {
-  background-color: var(--cor-secundaria-2);
-  color: var(--cor-texto);
+  background-color: #4caf50; /* Verde padrão do Material Design */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+  /* Verde mais escuro ao passar o mouse */
 }
 
 /* Seção de resultados */
 .item-resultado {
   display: flex;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  overflow: hidden;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .item-resultado img {
@@ -174,10 +199,31 @@ button {
 
 /* Footer */
 footer {
-  background-color: var(--cor-secundaria-1);
-  color: var(--cor-principal);
+  background-color: #333; /* Cor de fundo escura */
+  background: linear-gradient(to bottom right, #333, #666);
+  color: #fff; /* Cor do texto branca */
   text-align: center;
   padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade (Exemplo básico) */
