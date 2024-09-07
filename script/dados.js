@@ -3,7 +3,7 @@ let dados = [
     titulo: "Cientistas descobrem nova espécie de planta que purifica o ar! ",
     descricao:
       "Uma equipe de pesquisadores acaba de identificar uma nova espécie de planta com propriedades incríveis. Essa descoberta representa um grande avanço para a luta contra a poluição do ar e pode trazer benefícios significativos para o meio ambiente. ",
-    imagem: "#",
+    imagem: "/Imagens/cientista.jpg",
     link: "#",
   },
   {

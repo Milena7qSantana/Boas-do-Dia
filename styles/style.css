@@ -106,7 +106,6 @@ header p {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 25%;
-  border-left: 1px solid #ccc;
 }
 
 /* Main */
@@ -118,25 +117,25 @@ main {
     0.9
   ); /* Cor cinza claro com leve transparência */
   padding: 20px;
+  width: 50%;
 }
 
 /* Seção de pesquisa */
-section:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 #pesquisar {
   display: flex;
   flex-direction: column; /* Altera a direção para coluna */
-  justify-content: center;
   align-items: center;
   background-color: #f0f0f0; /* Cor de fundo suave */
   border-radius: 10px; /* Bordas arredondadas */
   padding: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisar-div {
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 input[type="date"],
@@ -230,5 +229,14 @@ footer p {
 @media (max-width: 768px) {
   .item-resultado {
     width: 100%;
+  }
+
+  .pesquisar-div {
+    flex-direction: column;
+  }
+
+  input[type="date"],
+  button {
+    width: 100px;
   }
 }
